@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 public record TaskRequestDto(
+        @NotNull String taskId
         @NotNull @NotBlank String title,
         @NotNull @NotBlank String statement,
         @NotNull int timeRestriction,
